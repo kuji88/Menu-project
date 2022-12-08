@@ -26,7 +26,7 @@ const Navb = () => {
               aria-label="Search"
               
             />
-            <Button variant="outline-primary">Search</Button>
+            <Button variant="outline-info">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

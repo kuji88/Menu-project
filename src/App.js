@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap";
+import Catagory from "./components/Catagory";
 import Hdr from "./components/Hdr";
+import Items from "./components/Items";
 import Navb from "./components/Navb";
 
 function App() {
@@ -7,7 +9,11 @@ function App() {
     <div className="font">
       <Navb/>
       <Container>
-      <Hdr />
+      <Hdr/>
+      <Catagory/>
+      <Items/>
+      <Items/>
+      <Items/>
         
       </Container>
     </div>

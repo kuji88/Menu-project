@@ -24,9 +24,32 @@ code {
 .underline{
   width: 350px;
   height: 1px;
-  border: 1px solid #0d6efd;
+  border: 1px solid #3abbd4;
 }
 
+.catagoryImg{
+  height: 20%;
+  width: 20%;
+  
+}
 
+.itemTitle{
+  color: rgb(58, 58, 58);
+  
+}
+
+.itemDiscribe{
+  color: rgb(92, 92, 92);
+}
+
+.itemB{
+  width: 159%;
+  height: 50%;
+}
+
+.color2{
+  color: #36b3cc;
+  font-weight: bold;
+}
 
 
