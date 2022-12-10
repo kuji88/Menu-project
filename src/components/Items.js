@@ -4,11 +4,15 @@ import { Col, Row,Card } from 'react-bootstrap'
 const Items = ({itemfilter}) => {
   return (
     <Row className='py-2'>
-
+      
       {
-        itemfilter.map((item) =>{
+        itemfilter.length >=1 ? (
+
+      itemfilter.map((item,key) =>{
+          
           return(
-          <Col  sm="12" className='my-2'>
+            
+          <Col  sm="12" className='my-2' key={key}>
         <Card className='d-flex flex-row text-black' style={{backgroundColor:'#F0F0F0'}}>
             <Card.Img className='catagoryImg' variant="top" src={item.img} />
             <Card.Body className='itemB'>
@@ -23,14 +27,15 @@ const Items = ({itemfilter}) => {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
-        )
+        </Col>)
+        
         })
-       
-      }
+      ): <h1 className='text-center text-light'>The list is empty </h1>}
+      
         
     </Row>
   )
 }
+
 
 export default Items
