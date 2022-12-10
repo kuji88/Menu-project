@@ -1,5 +1,8 @@
-export const Data= [{id:Math.random(), img:"arabic-food.jpg", title:"Arabic Salad",price:"5$", catagory:"Arabic", discribe:"none"}
-,{id:Math.random(), img:"Chicken-Makhani.jpg", title:"BChicken Makhani",price:"12$", catagory:"Indian", discribe:"none"}
-,{id:Math.random(), img:"Chicken-Makhani.jpg", title:"Chicken Makhani",price:"12$", catagory:"Indian", discribe:"none"}
-,{ id:Math.random(), img:"arabic-food.jpg", title:"snack",price:"5$", catagory:"Snack", discribe:"none"}]; 
+export const Data= [{id:Math.random(), img:"arabic-food.jpg", title:"Fattoush",price:"8$", catagory:"Arabic", discribe:"Fattoush is a Levantine salad made from toasted or fried pieces of khubz combined with mixed greens and other vegetables, such as radishes and tomatoes. Fattoush is popular among all communities in the Levant."}
+,{id:Math.random(), img:"Masgouf.jpg", title:"Masgouf",price:"25$", catagory:"Arabic", discribe:"Masgouf, is a Mesopotamian dish consisting of seasoned, grilled carp; it is often considered the national dish of Iraq. "}
+,{id:Math.random(), img:"Chicken-Makhani.jpg", title:"Chicken Makhani",price:"12$", catagory:"Indian", discribe:"Butter chicken, traditionally known as murgh makhani, is an Indian dish originating in New Delhi. It is a type of curry made from chicken with a spiced tomato and butter sauce. Its sauce is known for its rich texture. It is similar to chicken tikka masala, which uses a tomato paste."}
+,{ id:Math.random(), img:"Matar-Paneer.jpg", title:"Mattar paneer",price:"18$", catagory:"Indian", discribe:"Mattar paneer, also known as matar paneer, muttar paneer, and mutter paneer, is a modern restaurant-style and vegetarian North Indian dish consisting of peas and paneer in a tomato-based sauce, spiced with garam masala. It is often served with rice and an Indian type of bread."}
+,{ id:Math.random(), img:"Ramen.jpg", title:"Ramen",price:"12$", catagory:"Japanese", discribe:"Ramen is a Japanese noodle dish. It consists of Chinese-style wheat noodles served in a broth; common flavors are soy sauce and miso, with typical toppings including sliced pork, nori, menma, and scallions. Ramen has its roots in Chinese noodle dishes."}
+,{ id:Math.random(), img:"Sashimi.jpg", title:"Sashimi",price:"15$", catagory:"Japanese", discribe:"Sashimi is a Japanese delicacy consisting of fresh raw fish or meat sliced into thin pieces and often eaten with soy sauce. "}
+]; 
 
