@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Row,Card } from 'react-bootstrap'
+import { Fade } from 'react-awesome-reveal'
 
 const Items = ({itemfilter}) => {
   return (
@@ -13,6 +14,7 @@ const Items = ({itemfilter}) => {
           return(
             
           <Col  sm="12" className='my-2' key={key}>
+            <Fade direction={'left'}>
         <Card className='d-flex flex-row text-black' style={{backgroundColor:'#F0F0F0'}}>
             <Card.Img className='catagoryImg' variant="top" src={item.img} />
             <Card.Body className='itemB'>
@@ -27,10 +29,12 @@ const Items = ({itemfilter}) => {
               </Card.Text>
             </Card.Body>
           </Card>
+          </Fade>
         </Col>)
         
         })
-      ): <h1 className='text-center text-light'>The list is empty </h1>}
+      ): <h1 className='text-center text-light'>The list is empty </h1>
+      }
       
         
     </Row>

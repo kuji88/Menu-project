@@ -5,33 +5,48 @@ import Items from "./components/Items";
 import Navb from "./components/Navb";
 import { Data } from "./components/Data";
 import { useState } from "react";
+import { Fade } from "react-awesome-reveal";
 
 
 function App() {
   const [jData, setData] = useState(Data)
 
-
+  const cdata = [...new Set(Data.map((item)=> item.catagory))]
+  
 
   const catafilter= (cat)=>{
-    const arr2= jData.filter((item) =>item.catagory === cat)
-
+   
+    
     if(cat === "All"){
       setData(Data)
+      
     }
-    else{setData(arr2)}
+    if(cat !== "All"){
+      
+     const f= Data.filter((item)=> item.catagory === cat)
+     setData(f)
+     
+    }
+
+  }
+  const searchFilter= (word)=>{
+    if(word !==""){
+      const search= Data.filter((item)=> item.title === word)
+      setData(search)
+    }
   }
 
-
-  
   return (
     <div className="font">
-      <Navb/>
+    <Fade>
+      <Navb searchP={searchFilter}/>
       <Container>
       <Hdr/>
-      <Catagory cfilter={catafilter}/>
+      <Catagory cfilter={catafilter} cdata={cdata}/>
       <Items itemfilter={jData}/>
         
       </Container>
+      </Fade>
     </div>
   );
 }
