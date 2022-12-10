@@ -10,6 +10,8 @@ import { useState } from "react";
 function App() {
   const [jData, setData] = useState(Data)
 
+
+
   const catafilter= (cat)=>{
     const arr2= jData.filter((item) =>item.catagory === cat)
 
@@ -17,9 +19,10 @@ function App() {
       setData(Data)
     }
     else{setData(arr2)}
-      
-    
   }
+
+
+  
   return (
     <div className="font">
       <Navb/>

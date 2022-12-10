@@ -2,12 +2,11 @@ import React from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
 
 const Catagory = ({cfilter}) => {
+  
   const onfilter=(cat)=>{
-    
-
     cfilter(cat)
-
   }
+
   return (
     <Row>
         <Col className='d-flex justify-content-center mb-5' sm="12">
